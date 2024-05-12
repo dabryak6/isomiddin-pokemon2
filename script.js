@@ -136,3 +136,7 @@ let overlay = document.getElementById("overlay")
 overlay.addEventListener("click", () => {
     detailModal.classList.remove("show")
 })
+
+function bos() {
+    detailModal.classList.remove("show")
+}
