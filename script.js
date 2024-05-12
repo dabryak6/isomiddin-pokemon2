@@ -8,6 +8,26 @@ pokemons.forEach((item) => {
 
 })
 
+function search() {
+    let input = document.getElementById("input")
+    console.dir(input.value)
+
+    // console.log(fullData);
+
+    let name  = pokemons.filter((item) => item.name.toUpperCase()?.includes(input.value.toUpperCase()))
+
+    console.log(name);
+
+    ul.innerHTML = null
+
+    name?.forEach((item, index) => {
+        chiqar(item)
+    })
+}
+
+// let b = pokemons.filter((item) => item.name?.includes("s"))
+// console.log(b);
+
 function chiqar(item) {
     let li = document.createElement("li")
     li.classList.add("outlane-box")
